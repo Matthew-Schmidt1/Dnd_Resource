@@ -10,8 +10,8 @@ function openNav() {
     document.getElementById("main").style.marginLeft = "0";
   }
 
-  function expand(){
-    var coll = document.getElementsByClassName("collapsible");
+  function expand(sectionname){
+    var coll = document.getElementsById(sectionname);
     var i;
     
     for (i = 0; i < coll.length; i++) {
