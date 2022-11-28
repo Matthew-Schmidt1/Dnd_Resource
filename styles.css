@@ -93,11 +93,6 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-body{
-    font-family: Helvetica;
-    -webkit-font-smoothing: antialiased;
-    background: rgba( 71, 147, 227, 1);
-}
 h2{
     text-align: center;
     font-size: 18px;
@@ -183,7 +178,7 @@ h2{
     .fl-table td, .fl-table th {
         padding: 20px .625em .625em .625em;
         height: 60px;
-        vertical-align: middle;
+        vertical-align: left;
         box-sizing: border-box;
         overflow-x: hidden;
         overflow-y: auto;
