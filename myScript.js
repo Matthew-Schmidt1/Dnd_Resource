@@ -10,16 +10,17 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
 }
 
-function expand(sectionname) {
-    var coll = document.getElementById(sectionname);
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-    coll.addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.visibility === "visible") {
-            content.style.visibility = "hidden";
-        } else {
-            content.style.visibility = "visible";
-        }
-    });
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
 }
