@@ -175,10 +175,11 @@ lu {
   .fl-table {
     display: block;
     width: 100%;
+    word-break:break-all;
   }
 
   .table-wrapper:before {
-    content: "Scroll horizontally >";
+    content: "Scroll horizontally";
     display: block;
     text-align: right;
     font-size: 16px;
@@ -216,7 +217,7 @@ lu {
     overflow-y: auto;
     width: 120px;
     font-size: 16px;
-    text-overflow: ellipsis;
+    overflow-wrap: break-word;
   }
 
   .fl-table thead th {
@@ -225,6 +226,7 @@ lu {
   }
 
   .fl-table tbody tr {
+    vertical-align: text-top;
     display: table-cell;
   }
 
