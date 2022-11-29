@@ -83,12 +83,6 @@
     background-color: #f1f1f1;
   }
 
-  *{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-
 /* Table Styles */
 
 .table-wrapper{
