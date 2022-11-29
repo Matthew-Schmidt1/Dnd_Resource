@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://matthew-schmidt1.github.io/Dnd_Resource/styles.css">
+    <script src="https://matthew-schmidt1.github.io/Dnd_Resource/myScript.js"></script>
+    <title>DND Resources</title>
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="https://matthew-schmidt1.github.io/Dnd_Resource/">Home</a>
+        <h2 style="color: white;">Dying is just the beginning.</h2>
+        <a
+            href="https://matthew-schmidt1.github.io/Dnd_Resource/dying_is_just_the_beginning/dying_is_just_the_beginning.html">Player
+            Resources</a>
+        <a
+            href="https://matthew-schmidt1.github.io/Dnd_Resource/dying_is_just_the_beginning/GM_resources/GM_Resources.html">&emsp;GM
+            Resources</a>
+    </div>
+    <div id="main">
+        <button type="button" class="collapsible">Introduction</button>
+        <div class="table-wrapper content">
+            <h2>Introduction</h2>
+            <p>The point is to make the party run to the dugeon which is about 120 foot away, GM picks the direction</p>
+            <p>There is a Level 3 goal to Kill all the Big Boss.</p>
+            <h3>Geography</h3>
+            <p>The layer's climate resembled the Elemental Plane of Fire. It was dominated by a scorching heat that
+                ignited the air itself, creating seemingly sentient and aggressive flames that leapt at visitors but not
+                at the residents. The ground had fissures that spewed jets of flame that flowed into rivers of liquid
+                fire. It contained numerous volcanoes whose eruptive products flowed through rivers of lava into an
+                incandescent ocean of magma.</p>
+        </div>
+        <button type="button" class="collapsible">Main Monster</button>
+        <div class="table-wrapper content">
+            <h2>Big Boss</h2>
+            <a href="https://roll20.net/compendium/dnd5e/Adult%20Red%20Dragon#content">Adult Read Dragon</a>
+            <p>Make him arrive when the sub Boss gets to the point where he can be killed by the big boss.</p>
+            <p>Fist this he should do is kill the Sub Boss</p>
+            <h2>Sub Boss</h2>
+            <a href="https://roll20.net/compendium/dnd5e/Monsters:Fire%20Giant/#h-Fire%20Giant">Fire Giant</a>
+            <p>If they rolled low start them between its legs, it has a supprise round on the party.</p>
+        </div>
+        <button type="button" class="collapsible">NPCs</button>
+        <div class="table-wrapper content">
+            <h2>NPCs</h2>
+            <p>There are characters serviving on this area but they are hiding. They will help the party find the Big
+                Boss when they come back to kill it.</p>
+            <p> Mostly they are Teiflings and creatures that can survive infernal enviroment.</p>
+        </div>
+        <button type="button" class="collapsible">Minor Monsters</button>
+        <div class="table-wrapper content">
+            <table class="fl-table">
+                <tr>
+                    <td>
+                        <a href="https://roll20.net/compendium/dnd5e/Goblin#content">Goblins</a>
+                    </td>
+                    <td>
+                        <a href="https://roll20.net/compendium/dnd5e/Nightmare">Nightmare</a>
+                    </td>
+                    <td>
+                        <a href="https://roll20.net/compendium/dnd5e/Pit%20Fiend">Pit Fiend</a>
+                    </td>
+                    <td>
+                        <a href="https://roll20.net/compendium/dnd5e/Magma%20Mephit">Magma Mephit</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        openNav();
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
