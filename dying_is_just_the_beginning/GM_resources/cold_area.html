@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://matthew-schmidt1.github.io/Dnd_Resource/styles.css">
+    <script src="https://matthew-schmidt1.github.io/Dnd_Resource/myScript.js"></script>
+    <title>DND Resources</title>
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="https://matthew-schmidt1.github.io/Dnd_Resource/">Home</a>
+        <h2 style="color: white;">Dying is just the beginning.</h2>
+        <a
+            href="https://matthew-schmidt1.github.io/Dnd_Resource/dying_is_just_the_beginning/dying_is_just_the_beginning.html">Player
+            Resources</a>
+        <a
+            href="https://matthew-schmidt1.github.io/Dnd_Resource/dying_is_just_the_beginning/GM_resources/GM_Resources.html">&emsp;GM
+            Resources</a>
+    </div>
+    <div id="main">
+        <button type="button" class="collapsible">Introduction</button>
+        <div class="table-wrapper content">
+            <h2>Introduction</h2>
+            <p>The point is to make the party run to the dugeon which is about 120 foot away, GM picks the direction</p>
+            <p>There is a Level 3 goal to Kill all the Big Boss.</p>
+            <h3>Geography</h3>
+            <p>Its surface was almost entirely covered in ice floes and icebergs that crowded and completely covered
+                the ocean. The only open body of water was the Styx, which kept its dark, oily water separated from the
+                saltwater and meandered through the layer as if it were crossing a plain.<br>
+                The sky of Stygia was in a state of perpetual twilight and was constantly struck by lightning, which
+                made it extremely dangerous for flying creatures. Thunder swept the land in a continuous
+                rumble.<br>
+            </p>
+        </div>
+        <button type="button" class="collapsible">Main Monster</button>
+        <div class="table-wrapper content">
+            <h2>Big Boss</h2>
+            <a
+                href="https://roll20.net/compendium/dnd5e/Ancient%20White%20Dragon?fromList=Ancient%20White%20Dragon&Name=&Speed=#content">
+                Ancient White Dragon
+            </a>
+            <p>Make him arrive when the sub Boss gets to the point where he can be killed by the big boss.</p>
+            <p>Fist this he should do is kill the Sub Boss</p>
+            <h2>Sub Boss</h2>
+            <a href="https://roll20.net/compendium/dnd5e/Frost%20Giant#content">Frost Giant</a>
+            <p>If they rolled low start them between its legs, it has a supprise round on the party.</p>
+        </div>
+        <button type="button" class="collapsible">NPCs</button>
+        <div class="table-wrapper content">
+            <h2>NPCs</h2>
+            <p>There are characters serviving on this area but they are hiding. They will help the party find the Big
+                Boss when they come back to kill it.</p>
+            <p> Mostly they are human and other playable races but they all have big fur jackets and creatures that can
+                survive cold enviroment.</p>
+        </div>
+        <button type="button" class="collapsible">Minor Monsters</button>
+        <div class="table-wrapper content">
+            <table class="fl-table">
+                <tr>
+                    <td>
+                        <a href="https://roll20.net/compendium/dnd5e/Winter%20Wolf">dire wolves</a>
+                    </td>
+                    <td>
+                        <a href="https://roll20.net/compendium/dnd5e/Ogre%20Zombie">Ogre Zombie</a>
+                    </td>
+                    <td>
+                        <a href="https://roll20.net/compendium/dnd5e/Tyrannosaurus%20Rex">Tyrannosaurus Rex</a>
+                    </td>
+                    <td>
+                        <a href="https://roll20.net/compendium/dnd5e/Polar%20Bear">Polar Bear</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        openNav();
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
