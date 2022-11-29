@@ -62,7 +62,7 @@
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 16px;
   }
 
     /* Style the button that is used to open teh Side bar content */
@@ -75,7 +75,7 @@
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 16px;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -106,7 +106,7 @@
 
 .fl-table {
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: normal;
     border: none;
     border-collapse: collapse;
@@ -123,7 +123,7 @@
 
 .fl-table td {
     border-right: 1px solid #f8f8f8;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .fl-table thead th {
