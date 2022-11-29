@@ -141,6 +141,7 @@ lu {
   max-width: 100%;
   white-space: nowrap;
   background-color: white;
+  word-break: break-word;
 }
 
 .fl-table td,
@@ -175,7 +176,7 @@ lu {
   .fl-table {
     display: block;
     width: 100%;
-    word-break:break-all;
+    word-break: break-word;
   }
 
   .table-wrapper:before {
