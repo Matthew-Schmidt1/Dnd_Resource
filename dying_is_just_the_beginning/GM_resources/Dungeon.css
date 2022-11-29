@@ -1,0 +1,230 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* dungeon/style.css */
+
+body.codex {
+    margin: 0px;
+    padding: 2ex 2em;
+    font-family: 'Asul', sans-serif;
+  }
+  body.codex h1 {
+    text-align: center;
+    font-size: 200%; font-weight: bold;
+  }
+  body.codex h2 {
+    text-align: center;
+    font-size: 150%; font-weight: bold;
+  }
+
+  table.dungeon {
+    margin: 2ex auto;
+    border: none; border-collapse: collapse;
+  }
+  div.footnotes p {
+    margin: 2ex 2em;
+    text-align: center;
+  }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* dungeon map */
+
+  div.dungeon_map {
+    margin: 2ex 2em;
+    text-align: center;
+  }
+  div.dungeon_key {
+    margin: 2ex 2em;
+    text-align: center;
+  }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* table map */
+
+  table.map {
+    margin: 2ex auto;
+    border-left: 1px solid; border-top: 1px solid;
+      border-color: #333333;
+  }
+  table.map td.cell {
+    min-height: 10px; min-width: 10px;
+    border-right: 1px solid; border-bottom: 1px solid;
+      border-color: #cccccc;
+    padding: 0px;
+    background: white;
+    text-align: center; vertical-align: middle;
+    font-family: Helvetica, Geneva, sans-serif; font-size: 9px;
+  }
+  table.map td.cell a {
+    text-decoration: none;
+  }
+  table.map td.fill {
+    border-color: #333333;
+    background: #000000;
+  }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* details */
+
+  table.dungeon.details {
+    border-top: 1px solid;
+    border-color: #cccccc;
+  }
+  table.dungeon.details tr.section {
+    padding: 1ex 1em;
+    border-bottom: 1px solid;
+    border-color: #cccccc;
+  }
+  table.dungeon.details tr.section > td.title {
+    font-size: 120%;
+    line-height: 200%;
+  }
+
+  table.dungeon.details td {
+    padding: 1ex 1em;
+    vertical-align: top;
+  }
+  table.dungeon.details td.title {
+    min-width: 10em;
+    text-align: right;
+    font-weight: bold;
+  }
+  table.dungeon.details td.door {
+    min-width: 10em;
+    text-align: right;
+    font-style: italic;
+  }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* content */
+
+  table.dungeon.details td.content {
+    width: 100%;
+  }
+  table.dungeon.details td.content table {
+    border: none; border-collapse: collapse;
+  }
+  table.dungeon.details td.content p {
+    margin: 0px; padding: 0px;
+  }
+  table.dungeon.details td.content hr {
+    margin: 0px;
+    border: none; border-top: 1px solid;
+    border-color: #cccccc;
+  }
+  table.dungeon.details td.content > * + * {
+    margin-top: 1ex !important;
+  }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* hover effects */
+
+  table.dungeon.details tr.section:hover > td {
+    background: #dedede;
+  }
+  table.dungeon.details tr.row:hover td {
+    background: white;
+  }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* dungeon actions */
+
+  div.dungeon_actions {
+    margin: 2ex 4em; margin-top: 4ex;
+  }
+  div.dungeon_actions div.actions {
+    background: #dedede;
+  }
+  div.dungeon_actions div.file_type {
+    align-items: center;
+  }
+  div.dungeon_actions div.file_type div {
+    flex-basis: 25%;
+    flex-grow: 0;
+  }
+  div.dungeon_actions div.file_type div.icon {
+    text-align: center;
+  }
+  div.dungeon_actions div.file_type div.icon img {
+    max-width: 24px; max-height: 24px;
+  }
+  div.dungeon_actions div.file_type div.button input {
+    min-width: 10em;
+  }
+  div.dungeon_actions div.file_type div.desc {
+    flex-grow: 1;
+  }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* mobile */
+
+  @media screen and (hover: none) {
+    table.dungeon.details tr.section { display: block; }
+    table.dungeon.details tr.section > td { display: block; }
+    table.dungeon.details tr.section > td.title { text-align: left; }
+    table.dungeon.details tr.section > td.content { width: auto; }
+    table.dungeon.details td.title { min-width: 5em; }
+    table.dungeon.details td.door { min-width: 5em; }
+    div.dungeon_actions div.file_type div.icon { display: none; }
+  }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* print */
+
+  @media print {
+    body.codex { padding: 0px 1ex; font-size: 60%; }
+    div.dungeon_map img { max-width: 100%; }
+    div.dungeon_key img { max-width: 100%; }
+    div.dungeon_actions { display: none; }
+  }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    background-color: #111; /* Black*/
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
